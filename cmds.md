@@ -6,3 +6,4 @@ flask --app hello run
 
 flask run
 
+flask run --debug
