@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
 
-function App() {
+function Login() {
   return (
-    <div className="App">
+    <div className="">
       <header className="bg-black">
         Hello
       </header>
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
