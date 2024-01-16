@@ -6,3 +6,13 @@ body {
   background-color: #333333;
   font-family: "Inter";
 }
+
+#editor {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
