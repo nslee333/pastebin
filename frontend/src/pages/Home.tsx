@@ -1,4 +1,31 @@
 import '../styles/App.css';
+// import 'codemirror/lib/codemirror.css';
+// import 'codemirror/theme/material.css';
+import * as CodeMirror from 'codemirror';
+import { useEffect, useRef } from 'react';
+
+
+function CodeEditor() {
+  const editorRef = useRef<HTMLDivElement | null>(null);
+
+
+  useEffect(() => {
+    BasicSetup(editorRef.current, {
+      mode: 'javascript',
+      theme: "material",
+      lineNumbers: true,
+    });
+
+
+ 
+
+  }, [])
+
+
+  return <div ref={editorRef}></div>;
+}
+
+
 
 function Home() {
   return (
@@ -25,7 +52,7 @@ function Home() {
             
             <div className="bg-[#555] m-[1rem] h-[40vh] p-[.75rem] rounded">
               <div className="bg-[#222] rounded p-[.25rem] h-[37vh]">
-                
+                <CodeEditor />
 
               </div>
             </div>
@@ -44,3 +71,7 @@ function Home() {
 }
 
 export default Home;
+function BasicSetup(current: HTMLDivElement | null, arg1: { mode: string; theme: string; lineNumbers: boolean; }) {
+  throw new Error('Function not implemented.');
+}
+
