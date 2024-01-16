@@ -1,15 +1,4 @@
 import '../styles/App.css';
-import AceEditor from "react-ace";
-
-
-import "ace-builds/src-min-noconflict/mode-javascript";
-import "ace-builds/src-min-noconflict/theme-ambiance";
-import "ace-builds/src-min-noconflict/ext-language_tools";
-
-function onChange() {
-  console.log("onChange :)")
-}
-
 
 function Home() {
   return (
@@ -36,13 +25,8 @@ function Home() {
             
             <div className="bg-[#555] m-[1rem] h-[40vh] p-[.75rem] rounded">
               <div className="bg-[#222] rounded p-[.25rem] h-[37vh]">
-                <AceEditor
-                  setOptions={{ useWorker: false }}
-                  mode="javascript"
-                  theme="ambiance"
-                  onChange={onChange}
-                  name="editor"
-                />
+                
+
               </div>
             </div>
 
