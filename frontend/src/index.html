@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="body">
+      <header class="bg-[#666] flex justify-center h-[8rem]">
+        <div class="text-[#fff] flex items-center font-bold text-3xl w-[50%]">
+          
+          <div class="text-center">
+            Pastebin
+          </div>
+          
+        </div>
+      </header>
+
+      <div class="flex justify-center m-[2rem]">
+        <div class="w-[50%] h-[70vh] p-[2rem] bg-[#555] rounded-lg text-[#fff]">
+          <div class="bg-[#333] rounded-lg h-[60vh] p-[1rem]">
+            
+            <div class="bg-[#555] m-[1rem] p-[.5rem] rounded">
+              <div class="bg-[#222] rounded p-[.25rem]">
+                Title
+              </div>
+            </div>
+            
+            <div class="bg-[#555] m-[1rem] h-[40vh] p-[.75rem] rounded">
+               <div id='editor-div' class=" bg-[#222] rounded p-[.25rem] h-[37vh]"> 
+                 <!-- * This is where I want my editor to appear  -->
+              <CodeEditor />
+            </div>
+
+            <div class="flex justify-end">
+              <button class="bg-[#2ec116] font-bold w-[10rem] h-[2rem] rounded m-[1rem] align-right">
+                Create Paste
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
