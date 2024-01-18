@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <script src="./editor.js"></script>
+  <script type="script" src="./editor.js"></script>
 </head>
 <body>
   
@@ -29,9 +29,10 @@
               </div>
             </div>
             
-            <div class="bg-[#555] m-[1rem] h-[40vh] p-[.75rem] rounded">
+            <div id='editor-div-outer' class="bg-[#555] m-[1rem] h-[40vh] p-[.75rem] rounded">
                <div id='editor-div' class=" rounded h-[37vh]">
-                  <textarea class="cursor-auto text-[#fff] bg-[#222] w-[100%] min-h-[37vh] rounded autofocus" name="" autofocus>ddsd</textarea>
+                  <div id='editor' class="cursor-auto text-[#fff] bg-[#222] w-[100%] min-h-[37vh] rounded"></div>
+                  <script src="../editor.bundle.js"></script>
               </div>
             </div>
 
@@ -45,7 +46,5 @@
         </div>
       </div>
     </div>
-
-
 </body>
 </html>
